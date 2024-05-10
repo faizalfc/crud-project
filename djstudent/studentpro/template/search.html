@@ -1,0 +1,12 @@
+<head>
+    <title>student detail</title>
+</head>
+<body bgcolor="cyan">
+    <h1>SEARCH STUDENT DETAIL</h1>
+     <form action="/serstu/" method="post">
+        {% csrf_token %}
+        ENTER THE NAME:<input type="text" name="sn"><br><br>
+        <input type="submit" value="search">
+        <h3>{{r}}</h3>
+    </form>
+</body>
